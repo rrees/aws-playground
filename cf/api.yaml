@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: A basic API gateway
+Resources:
+  Gateway:
+    Type: "AWS::ApiGateway::RestApi"
+    Properties:
+      Name: "Test Gateway"
+  DevKey:
+    Type: "AWS::ApiGateway::ApiKey"
+    Properties: 
+      Name: DevKeyTest
+      Description: Key for development experimentation
+      Enabled: true
